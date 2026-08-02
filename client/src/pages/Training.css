@@ -1,0 +1,124 @@
+.training-banner{
+padding:120px 8%;
+background:#0b2d5c;
+color:white;
+text-align:center;
+}
+
+.training-banner span{
+color:#ff9800;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.training-banner h1{
+font-size:55px;
+margin:20px 0;
+}
+
+.training-banner p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.training-section{
+padding:90px 8%;
+}
+
+.training-section h2{
+text-align:center;
+margin-bottom:50px;
+color:#0b2d5c;
+}
+
+.training-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.training-card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.training-card:hover{
+transform:translateY(-8px);
+}
+
+.training-card h3{
+margin-bottom:15px;
+color:#0b2d5c;
+}
+
+.training-card p{
+line-height:1.8;
+color:#666;
+}
+
+.methodology{
+padding:90px 8%;
+background:#f7f9fc;
+}
+
+.methodology h2{
+text-align:center;
+margin-bottom:50px;
+}
+
+.method-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.method-grid div{
+background:white;
+padding:20px;
+border-radius:10px;
+font-weight:600;
+}
+
+.audience{
+padding:90px 8%;
+}
+
+.audience h2{
+text-align:center;
+margin-bottom:50px;
+}
+
+.audience-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.audience-grid div{
+background:#0b2d5c;
+color:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.training-cta{
+padding:90px 8%;
+background:#ff9800;
+text-align:center;
+color:white;
+}
+
+.training-cta button{
+margin-top:25px;
+padding:14px 40px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+}

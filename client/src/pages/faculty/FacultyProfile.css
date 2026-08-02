@@ -1,0 +1,169 @@
+.faculty-profile{
+    padding-top:110px;
+    background:#f7f9fc;
+}
+
+.faculty-hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+    padding:70px 8%;
+    background:white;
+    flex-wrap:wrap;
+}
+
+.faculty-image img{
+    width:380px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.faculty-content{
+    max-width:650px;
+}
+
+.faculty-tag{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.faculty-content h1{
+    font-size:52px;
+    color:#0b2d5c;
+    margin-bottom:10px;
+}
+
+.faculty-content h3{
+    color:#ff9800;
+    margin-bottom:25px;
+}
+
+.faculty-content p{
+    line-height:1.9;
+    color:#555;
+    font-size:17px;
+}
+
+.faculty-stats{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:#0b2d5c;
+    color:white;
+    padding:25px;
+    width:170px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.stat-box h2{
+    color:#ff9800;
+    margin-bottom:8px;
+}
+
+.profile-section{
+    padding:70px 8%;
+}
+
+.profile-section h2{
+    color:#0b2d5c;
+    font-size:34px;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.profile-section h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#ff9800;
+    display:block;
+    margin-top:10px;
+}
+
+.profile-section p{
+    line-height:1.9;
+    color:#555;
+    font-size:17px;
+}
+
+.expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    margin-top:35px;
+}
+
+.expertise-grid div{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-weight:600;
+    transition:.3s;
+}
+
+.expertise-grid div:hover{
+    transform:translateY(-5px);
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.timeline-card{
+    background:white;
+    padding:30px;
+    border-left:5px solid #ff9800;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.timeline-card h3{
+    color:#0b2d5c;
+    margin-bottom:12px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact-box p{
+    margin:15px 0;
+}
+
+@media(max-width:900px){
+
+.faculty-content h1{
+font-size:38px;
+}
+
+.faculty-image img{
+width:300px;
+}
+
+.faculty-hero{
+padding:50px 6%;
+}
+
+.profile-section{
+padding:50px 6%;
+}
+
+}
