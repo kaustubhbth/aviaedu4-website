@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 import "./HeroSlider.css";
 
-const slides = [
+const featuredSlides = [
   {
     image:
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80",
@@ -53,6 +53,24 @@ const slides = [
   },
 ];
 
+const folderSlides = Object.entries(
+  import.meta.glob("../assets/images/slideshow/*.{jpg,jpeg,png,webp,avif}", {
+    eager: true,
+    import: "default",
+  })
+)
+  .sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath))
+  .map(([path, image]) => ({
+    image,
+    alt: `Slideshow image: ${path
+      .split("/")
+      .pop()
+      .replace(/\.[^.]+$/, "")
+      .replace(/[-_]+/g, " ")}`,
+  }));
+
+const slides = [...featuredSlides, ...folderSlides];
+
 function HeroSlider() {
   return (
     <Swiper
@@ -68,20 +86,26 @@ function HeroSlider() {
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className="hero-slide"
+            className={`hero-slide${slide.title ? "" : " image-only"}`}
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)), url(${slide.image})`,
+              backgroundImage: slide.title
+                ? `linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)), url(${slide.image})`
+                : `url(${slide.image})`,
             }}
+            role={slide.alt ? "img" : undefined}
+            aria-label={slide.alt}
           >
-            <div className="hero-content">
-              <h1>{slide.title}</h1>
+            {slide.title && (
+              <div className="hero-content">
+                <h1>{slide.title}</h1>
 
-              <p>{slide.subtitle}</p>
+                <p>{slide.subtitle}</p>
 
-              <Link className="home-btn" to={slide.link}>
-                {slide.button}
-              </Link>
-            </div>
+                <Link className="home-btn" to={slide.link}>
+                  {slide.button}
+                </Link>
+              </div>
+            )}
           </div>
         </SwiperSlide>
       ))}

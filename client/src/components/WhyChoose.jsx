@@ -3,7 +3,7 @@ import "./WhyChoose.css";
 function WhyChoose() {
   return (
     <section className="why-choose">
-      <h2>Why Choose AVIAEDU4?</h2>
+      <h2>Why Choose AVIAEDU4 Trainers &amp; Consultants?</h2>
 
       <div className="why-grid">
         <div className="why-card">

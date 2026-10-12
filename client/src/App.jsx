@@ -11,7 +11,6 @@ import Consulting from "./pages/Consulting";
 import Faculty from "./pages/Faculty";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-import LMS from "./pages/LMS";
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
         <Route path="/consulting" element={<Consulting />} />
         <Route path="/faculty/*" element={<Faculty />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/lms" element={<LMS />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

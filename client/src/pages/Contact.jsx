@@ -23,7 +23,7 @@ function Contact() {
           <div className="info-box">
             <h3>Address</h3>
 
-            <p>Gurugram, Haryana, India</p>
+            <p>D-52, Gulmohar Park, Ground Floor, New Delhi-110049</p>
           </div>
 
           <div className="info-box">
@@ -71,7 +71,7 @@ function Contact() {
       <section className="map-section">
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps?q=Gurugram&output=embed"
+          src="https://www.google.com/maps?q=D-52%2C%20Gulmohar%20Park%2C%20Ground%20Floor%2C%20New%20Delhi-110049&output=embed"
           loading="lazy"
         ></iframe>
       </section>

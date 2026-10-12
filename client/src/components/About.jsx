@@ -6,10 +6,10 @@ function About() {
       <div className="about-left">
         <span className="section-tag">ABOUT US</span>
 
-        <h2>About AVIAEDU4 Aviation Academy</h2>
+        <h2>About AVIAEDU4 Trainers &amp; Consultants</h2>
 
         <p>
-          AVIAEDU4 is a premier Aviation Training & Consulting Academy committed
+          AVIAEDU4 Trainers &amp; Consultants is a premier aviation training and consulting organization committed
           to developing industry-ready professionals through practical,
           competency-based learning.
         </p>

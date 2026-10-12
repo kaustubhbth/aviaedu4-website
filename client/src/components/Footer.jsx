@@ -1,18 +1,51 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
+const socialLinks = [
+  { label: "LinkedIn", href: "", Icon: FaLinkedinIn },
+  { label: "Instagram", href: "", Icon: FaInstagram },
+];
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-about">
-          <h2>AVIAEDU4</h2>
+          <h2>AVIAEDU4 Trainers &amp; Consultants</h2>
 
           <p>
             Professional Aviation Training, Consulting and Leadership
             Development platform committed to developing industry-ready aviation
             professionals.
           </p>
+
+          <div className="footer-socials" aria-label="Social media">
+            {socialLinks.map(({ label, href, Icon }) => {
+              const icon = <Icon aria-hidden="true" />;
+
+              return href ? (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {icon}
+                </a>
+              ) : (
+                <span
+                  key={label}
+                  className="footer-social-placeholder"
+                  aria-label={`${label} profile link will be added later`}
+                  title={`${label} profile link will be added later`}
+                >
+                  {icon}
+                </span>
+              );
+            })}
+          </div>
         </div>
 
         <div className="footer-links">
@@ -50,7 +83,7 @@ function Footer() {
         <div className="footer-contact">
           <h3>Contact</h3>
 
-          <p>📍 Gurugram, Haryana</p>
+          <p>📍 D-52, Gulmohar Park, Ground Floor, New Delhi-110049</p>
 
           <p>📞 +91 XXXXX XXXXX</p>
 
@@ -59,7 +92,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 AVIAEDU4. All Rights Reserved.</p>
+        <p>© 2026 AVIAEDU4 Trainers &amp; Consultants. All Rights Reserved.</p>
       </div>
     </footer>
   );

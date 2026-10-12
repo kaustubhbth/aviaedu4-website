@@ -4,7 +4,7 @@ function About() {
     <>
       <section className="page-banner">
         <div className="container">
-          <h1>About AVIAEDU4</h1>
+          <h1>About AVIAEDU4 Trainers &amp; Consultants</h1>
           <p>
             Building the next generation of aviation professionals through
             practical training, expert mentorship and industry excellence.
@@ -17,7 +17,7 @@ function About() {
           <h2>Who We Are</h2>
 
           <p>
-            AVIAEDU4 is a premier Aviation Training and Consulting Academy
+            AVIAEDU4 Trainers &amp; Consultants is a premier aviation training and consulting organization
             committed to developing industry-ready professionals through
             practical, competency-based learning.
           </p>

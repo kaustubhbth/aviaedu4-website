@@ -25,6 +25,10 @@
    background: linear-gradient(90deg, rgba(7, 20, 37, 0.76) 0%, rgba(7, 20, 37, 0.54) 52%, rgba(7, 20, 37, 0.18) 100%);
 }
 
+.home-page .hero-slide.image-only::after {
+   background: rgba(7, 20, 37, 0.12);
+}
+
 .home-page .hero-content {
    position: relative;
    z-index: 1;

@@ -13,8 +13,8 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="logo" aria-label="AVIAEDU4 logo">
-        <img className="logo-image" src={aviaLogo} alt="AVIAEDU4 logo" />
+      <div className="logo" aria-label="AVIAEDU4 Trainers & Consultants logo">
+        <img className="logo-image" src={aviaLogo} alt="AVIAEDU4 Trainers & Consultants logo" />
       </div>
 
       <nav className={menuOpen ? "nav-active" : ""}>
@@ -52,12 +52,6 @@ function Navbar() {
           <li>
             <Link to="/gallery" onClick={closeMenu}>
               Gallery
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/lms" onClick={closeMenu}>
-              LMS
             </Link>
           </li>
 

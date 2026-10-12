@@ -78,7 +78,7 @@ function Home() {
           <h2>Ready To Build Your Aviation Career?</h2>
 
           <p>
-            Join AVIAEDU4 and learn from experienced aviation professionals.
+            Join AVIAEDU4 Trainers &amp; Consultants and learn from experienced aviation professionals.
           </p>
 
           <Link className="home-btn" to="/contact">
