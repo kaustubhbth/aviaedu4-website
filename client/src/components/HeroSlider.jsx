@@ -70,7 +70,7 @@ function HeroSlider() {
           <div
             className="hero-slide"
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(${slide.image})`,
+              backgroundImage: `linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)), url(${slide.image})`,
             }}
           >
             <div className="hero-content">
@@ -78,8 +78,8 @@ function HeroSlider() {
 
               <p>{slide.subtitle}</p>
 
-              <Link to={slide.link}>
-                <button>{slide.button}</button>
+              <Link className="home-btn" to={slide.link}>
+                {slide.button}
               </Link>
             </div>
           </div>

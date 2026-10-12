@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-import yogesh from "../../assets/images/yogesh-bhandari.jpeg";
-import anoop from "../../assets/images/anoop-bhatnagar.jpeg";
-import mazher from "../../assets/images/mazher-iqbal.jpeg";
-import vijendra from "../../assets/images/vijendra-verma.jpeg";
+import yogesh from "../../assets/images/faculty/yogesh-bhandari.jpeg";
+import anoop from "../../assets/images/faculty/anoop-bhatnagar.jpeg";
+import mazher from "../../assets/images/faculty/mazher-iqbal.jpeg";
+import vijendra from "../../assets/images/faculty/vijendra-verma.jpeg";
 
 import "./FacultyHome.css";
 

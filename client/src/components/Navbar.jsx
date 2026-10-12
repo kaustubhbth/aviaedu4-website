@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import aviaLogo from "../assets/images/logo/aviaedu4-logo.jpeg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,9 +13,8 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="logo">
-        <span className="logo-blue">AVIA</span>
-        <span className="logo-orange">EDU4</span>
+      <div className="logo" aria-label="AVIAEDU4 logo">
+        <img className="logo-image" src={aviaLogo} alt="AVIAEDU4 logo" />
       </div>
 
       <nav className={menuOpen ? "nav-active" : ""}>
@@ -68,12 +68,16 @@ function Navbar() {
           </li>
 
           <li className="mobile-apply">
-            <button className="apply-btn">Apply Now</button>
+            <Link className="apply-btn" to="/contact" onClick={closeMenu}>
+              Apply Now
+            </Link>
           </li>
         </ul>
       </nav>
 
-      <button className="apply-btn desktop-btn">Apply Now</button>
+      <Link className="apply-btn desktop-btn" to="/contact">
+        Apply Now
+      </Link>
 
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}

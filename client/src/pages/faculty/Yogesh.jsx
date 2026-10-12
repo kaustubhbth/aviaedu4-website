@@ -1,4 +1,4 @@
-import yogesh from "../../assets/images/yogesh-bhandari.jpeg";
+import yogesh from "../../assets/images/faculty/yogesh-bhandari.jpeg";
 import "./FacultyProfile.css";
 
 function Yogesh() {

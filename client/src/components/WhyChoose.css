@@ -1,110 +1,115 @@
-.why{
+.home-page section.why-choose {
 
-    padding:100px 8%;
+    padding-inline: clamp(1.25rem, 8vw, 7.5rem);
 
-    background:#f8fbff;
+    background: #f8fbff;
 }
 
-.section-heading{
-
-    text-align:center;
-
-    margin-bottom:60px;
+.home-page section.why-choose>h2 {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
-.section-heading span{
+.section-heading {
 
-    color:#f7941d;
+    text-align: center;
 
-    font-weight:700;
-
-    letter-spacing:2px;
+    margin-bottom: 60px;
 }
 
-.section-heading h2{
+.section-heading span {
 
-    font-size:42px;
+    color: #f7941d;
 
-    color:#0b3c6d;
+    font-weight: 700;
 
-    margin:15px 0;
+    letter-spacing: 2px;
 }
 
-.section-heading p{
+.section-heading h2 {
 
-    max-width:700px;
+    font-size: 42px;
 
-    margin:auto;
+    color: #0b3c6d;
 
-    color:#666;
-
-    line-height:1.8;
+    margin: 15px 0;
 }
 
-.why-grid{
+.section-heading p {
 
-    display:grid;
+    max-width: 700px;
 
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    margin: auto;
 
-    gap:30px;
+    color: #666;
+
+    line-height: 1.8;
 }
 
-.why-card{
+.why-grid {
 
-    background:white;
+    display: grid;
 
-    border-radius:18px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
 
-    padding:35px;
-
-    text-align:center;
-
-    transition:.35s;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    gap: clamp(16px, 2.4vw, 30px);
 }
 
-.why-card:hover{
+.why-card {
 
-    transform:translateY(-10px);
+    background: white;
+
+    border-radius: 4px;
+
+    padding: 26px;
+
+    text-align: center;
+
+    transition: border-color .2s ease;
+
+    box-shadow: none;
+    border: 1px solid rgba(11, 45, 92, .1);
 }
 
-.icon{
+.why-card:hover {
 
-    font-size:50px;
-
-    color:#f7941d;
-
-    margin-bottom:20px;
+    border-color: var(--gold-500);
 }
 
-.why-card h3{
+.icon {
 
-    margin-bottom:15px;
+    font-size: 38px;
 
-    color:#0b3c6d;
+    color: #f7941d;
+
+    margin-bottom: 16px;
 }
 
-.why-card p{
+.why-card h3 {
 
-    color:#666;
+    margin-bottom: 15px;
 
-    line-height:1.7;
+    color: #0b3c6d;
 }
 
-@media(max-width:768px){
+.why-card p {
 
-.section-heading h2{
+    color: #666;
 
-font-size:32px;
-
+    line-height: 1.7;
 }
 
-.why{
+@media(max-width:768px) {
 
-padding:70px 20px;
+    .section-heading h2 {
 
-}
+        font-size: 32px;
+
+    }
+
+    .home-page section.why-choose {
+
+        padding-inline: 20px;
+
+    }
 
 }

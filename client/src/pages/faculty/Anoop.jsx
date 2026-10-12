@@ -1,4 +1,4 @@
-import anoop from "../../assets/images/anoop-bhatnagar.jpeg";
+import anoop from "../../assets/images/faculty/anoop-bhatnagar.jpeg";
 import "./FacultyProfile.css";
 
 function Anoop() {

@@ -1,4 +1,4 @@
-import vijendra from "../../assets/images/vijendra-verma.jpeg";
+import vijendra from "../../assets/images/faculty/vijendra-verma.jpeg";
 import "./FacultyProfile.css";
 
 function Vijendra() {

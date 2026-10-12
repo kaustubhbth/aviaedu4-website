@@ -1,74 +1,77 @@
-.faculty-home{
-    padding:120px 8%;
-    background:#f7f9fc;
+.faculty-home {
+    padding: clamp(6.5rem, 11vw, 9rem) 0 4.5rem;
+    background: #fff;
 }
 
-.faculty-heading{
-    text-align:center;
-    margin-bottom:60px;
+.faculty-heading {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.faculty-heading span{
-    color:#ff9800;
-    font-weight:700;
-    letter-spacing:2px;
+.faculty-heading span {
+    color: var(--gold-500);
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
 }
 
-.faculty-heading h2{
-    font-size:42px;
-    color:#0b2d5c;
-    margin:15px 0;
+.faculty-heading h2 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    color: var(--navy-900);
+    margin: 0.85rem 0 0.9rem;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
 }
 
-.faculty-heading p{
-    max-width:700px;
-    margin:auto;
-    color:#666;
-    line-height:1.8;
+.faculty-heading p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--ink-500);
+    line-height: 1.8;
 }
 
-.faculty-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 
-.faculty-card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    transition:.3s;
+.faculty-card {
+    background: var(--white);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid var(--line);
+    box-shadow: none;
 }
 
-.faculty-card:hover{
-    transform:translateY(-10px);
+.faculty-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
 }
 
-.faculty-card img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
+.faculty-card h3 {
+    margin-top: 1.2rem;
+    color: var(--navy-900);
+    font-size: 1.5rem;
 }
 
-.faculty-card h3{
-    margin-top:20px;
-    color:#0b2d5c;
+.faculty-card p {
+    color: var(--ink-500);
+    margin: 0.7rem 1.2rem 1.2rem;
+    line-height: 1.7;
 }
 
-.faculty-card p{
-    color:#777;
-    margin:10px 20px 20px;
-}
-
-.faculty-card button{
-    margin-bottom:25px;
-    padding:12px 28px;
-    border:none;
-    border-radius:30px;
-    background:#ff9800;
-    color:#fff;
-    cursor:pointer;
-    font-weight:600;
+.faculty-card button {
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--gold-500);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: none;
 }

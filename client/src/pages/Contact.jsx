@@ -21,25 +21,25 @@ function Contact() {
           <h2>Get In Touch</h2>
 
           <div className="info-box">
-            <h3>📍 Address</h3>
+            <h3>Address</h3>
 
             <p>Gurugram, Haryana, India</p>
           </div>
 
           <div className="info-box">
-            <h3>📞 Phone</h3>
+            <h3>Phone</h3>
 
             <p>+91 XXXXX XXXXX</p>
           </div>
 
           <div className="info-box">
-            <h3>📧 Email</h3>
+            <h3>Email</h3>
 
             <p>info@aviaedu4.com</p>
           </div>
 
           <div className="info-box">
-            <h3>🕒 Office Hours</h3>
+            <h3>Office Hours</h3>
 
             <p>
               Monday – Saturday

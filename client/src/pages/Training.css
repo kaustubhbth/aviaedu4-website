@@ -1,124 +1,248 @@
-.training-banner{
-padding:120px 8%;
-background:#0b2d5c;
-color:white;
-text-align:center;
+.training-banner,
+.consult-banner,
+.contact-banner,
+.gallery-banner {
+   padding: 9rem 0 4rem;
+   background: var(--navy-900);
+   color: var(--white);
+   text-align: left;
 }
 
-.training-banner span{
-color:#ff9800;
-font-weight:700;
-letter-spacing:2px;
+.training-banner span,
+.consult-banner span,
+.contact-banner span,
+.gallery-banner span {
+   color: var(--gold-500);
+   font-weight: 700;
+   letter-spacing: 0.12em;
+   text-transform: uppercase;
+   font-size: 0.78rem;
 }
 
-.training-banner h1{
-font-size:55px;
-margin:20px 0;
+.training-banner h1,
+.consult-banner h1,
+.contact-banner h1,
+.gallery-banner h1 {
+   font-size: clamp(2.4rem, 4vw, 3.6rem);
+   margin: 1rem 0;
+   line-height: 1.12;
+   letter-spacing: 0;
 }
 
-.training-banner p{
-max-width:800px;
-margin:auto;
-line-height:1.8;
+.training-banner p,
+.consult-banner p,
+.contact-banner p,
+.gallery-banner p {
+   max-width: 760px;
+   margin: 0;
+   line-height: 1.7;
+   color: rgba(255, 255, 255, 0.82);
+   font-size: 1rem;
 }
 
-.training-section{
-padding:90px 8%;
+.training-section,
+.consult-services,
+.industries,
+.consult-process,
+.contact-page,
+.gallery-section,
+.profile-section {
+   padding: clamp(3.5rem, 6vw, 5.5rem) 0;
 }
 
-.training-section h2{
-text-align:center;
-margin-bottom:50px;
-color:#0b2d5c;
+.training-section h2,
+.consult-services h2,
+.industries h2,
+.consult-process h2,
+.contact-info h2,
+.contact-form h2,
+.gallery-section h2,
+.profile-section h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+   color: var(--navy-900);
+   font-size: clamp(1.8rem, 3vw, 2.8rem);
+   line-height: 1.2;
 }
 
-.training-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
+.training-grid,
+.consult-grid,
+.industry-grid,
+.audience-grid,
+.gallery-grid,
+.expertise-grid {
+   display: grid;
+   gap: 1.5rem;
 }
 
-.training-card{
-background:white;
-padding:35px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
+.training-grid,
+.consult-grid,
+.gallery-grid,
+.expertise-grid {
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.training-card:hover{
-transform:translateY(-8px);
+.training-card,
+.consult-card,
+.gallery-card,
+.industry-grid div,
+.method-grid div,
+.audience-grid div,
+.expertise-grid div,
+.timeline-card,
+.contact-box,
+.info-box {
+   background: var(--white);
+   border-radius: 5px;
+   border: 1px solid var(--line);
+   box-shadow: none;
 }
 
-.training-card h3{
-margin-bottom:15px;
-color:#0b2d5c;
+.training-card,
+.consult-card {
+   padding: clamp(1.5rem, 3vw, 2.2rem);
+   transition: border-color 0.2s ease;
 }
 
-.training-card p{
-line-height:1.8;
-color:#666;
+.training-card:hover,
+.consult-card:hover,
+.expertise-grid div:hover {
+   border-color: var(--gold-500);
 }
 
-.methodology{
-padding:90px 8%;
-background:#f7f9fc;
+.training-card h3,
+.consult-card h3,
+.timeline-card h3,
+.contact-box h3,
+.info-box h3 {
+   margin-bottom: 0.8rem;
+   color: var(--navy-900);
+   font-size: 1.3rem;
 }
 
-.methodology h2{
-text-align:center;
-margin-bottom:50px;
+.training-card p,
+.consult-card p,
+.info-box p,
+.profile-section p,
+.contact-box p {
+   color: var(--ink-500);
+   line-height: 1.8;
 }
 
-.method-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+.methodology,
+.audience {
+   padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+   background: var(--surface-strong);
 }
 
-.method-grid div{
-background:white;
-padding:20px;
-border-radius:10px;
-font-weight:600;
+.method-grid,
+.audience-grid,
+.process-grid {
+   display: grid;
+   gap: 1.25rem;
 }
 
-.audience{
-padding:90px 8%;
+.method-grid {
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.audience h2{
-text-align:center;
-margin-bottom:50px;
+.method-grid div {
+   padding: 1.4rem 1.2rem;
+   font-weight: 600;
+   color: var(--navy-900);
 }
 
-.audience-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+.audience-grid {
+   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 
-.audience-grid div{
-background:#0b2d5c;
-color:white;
-padding:20px;
-border-radius:10px;
-text-align:center;
+.audience-grid div {
+   padding: 1.4rem 1rem;
+   text-align: center;
+   background: var(--navy-900);
+   color: var(--white);
+   font-weight: 600;
 }
 
-.training-cta{
-padding:90px 8%;
-background:#ff9800;
-text-align:center;
-color:white;
+.training-cta,
+.consult-cta {
+   padding: clamp(3.5rem, 6vw, 5rem) 0;
+   text-align: center;
+   color: var(--white);
+   background: var(--navy-900);
 }
 
-.training-cta button{
-margin-top:25px;
-padding:14px 40px;
-border:none;
-border-radius:30px;
-cursor:pointer;
-font-size:16px;
-font-weight:bold;
+.training-cta h2,
+.consult-cta h2 {
+   font-size: clamp(1.8rem, 3vw, 2.8rem);
+   margin-bottom: 1rem;
+   color: var(--white);
+}
+
+.training-cta button,
+.consult-cta button {
+   margin-top: 1rem;
+   padding: 0.95rem 2.2rem;
+   border-radius: 4px;
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 1rem;
+   background: var(--navy-900);
+   color: var(--white);
+   box-shadow: none;
+}
+
+.industries h2,
+.consult-process h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.industry-grid {
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.industry-grid div {
+   padding: 1.5rem 1rem;
+   text-align: center;
+   font-weight: 600;
+   color: var(--navy-900);
+}
+
+.process-grid {
+   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.process-grid div {
+   background: var(--navy-900);
+   color: var(--white);
+   padding: 1.5rem 1rem;
+   text-align: center;
+   border-radius: 4px;
+}
+
+.process-grid h3 {
+   color: var(--gold-500);
+   font-size: clamp(2rem, 4vw, 2.8rem);
+   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+   .process-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+}
+
+@media (max-width: 768px) {
+
+   .process-grid,
+   .training-grid,
+   .consult-grid,
+   .industry-grid,
+   .method-grid,
+   .audience-grid,
+   .gallery-grid,
+   .expertise-grid {
+      grid-template-columns: 1fr;
+   }
 }

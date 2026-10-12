@@ -1,4 +1,4 @@
-import mazher from "../../assets/images/mazher-iqbal.jpeg";
+import mazher from "../../assets/images/faculty/mazher-iqbal.jpeg";
 import "./FacultyProfile.css";
 
 function Mazher() {
