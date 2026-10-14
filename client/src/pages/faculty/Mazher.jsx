@@ -10,21 +10,19 @@ function Mazher() {
         </div>
 
         <div className="faculty-content">
-          <span className="faculty-tag">AVIATION • AIR CARGO • LOGISTICS</span>
+          <span className="faculty-tag">Air Cargo & Logistics Veteran</span>
 
           <h1>Mazher Iqbal</h1>
 
-          <h3>
-            Aviation, Air Cargo & Logistics Veteran | Trainer | Consultant
-          </h3>
+          <h3>Aviation, Air Cargo & Logistics Veteran | Trainer | Consultant</h3>
 
           <p>
-            Distinguished Aviation, Air Cargo and Logistics professional with
-            over four decades of global experience in airline operations,
+            Distinguished aviation, air cargo and logistics professional with
+            over 40 years of global experience spanning airline operations,
             airport services, cargo management, commercial sales, marketing,
-            supply chain logistics and aviation training. Widely recognized for
-            building high-performing teams, operational excellence and practical
-            industry-oriented training programs.
+            supply chain logistics and training. He has built a substantial
+            reputation for operational leadership, team development and practical,
+            results-driven solutions for the aviation and logistics ecosystem.
           </p>
 
           <div className="faculty-stats">
@@ -39,61 +37,30 @@ function Mazher() {
             </div>
 
             <div className="stat-box">
-              <h2>Trainer</h2>
-              <p>Mentor & Consultant</p>
+              <h2>Air Cargo</h2>
+              <p>Leadership & Consulting</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Professional Summary</h2>
+        <h2>Professional Overview</h2>
 
         <p>
-          Mazher Iqbal has successfully served globally reputed aviation and
-          cargo organizations across airline operations, commercial management,
-          airport services and logistics. His experience spans strategic
-          leadership, cargo handling, customer relationship management,
-          operations planning, supply chain optimization and aviation business
+          Mazher Iqbal brings a rich and diverse perspective to aviation and
+          cargo operations, with experience across major global airlines,
+          airport operations and commercial logistics functions. His background
+          spans end-to-end operational responsibility, cargo handling, sales,
+          route and station management, supply chain process thinking and team
           development.
         </p>
 
         <p>
-          Throughout his career he has consistently delivered operational
-          excellence while mentoring aviation professionals and helping
-          organizations improve efficiency, customer satisfaction and business
-          performance.
+          He has held leadership roles with globally renowned organizations and
+          has played a key part in business growth, operational excellence and
+          capability-building across the aviation value chain.
         </p>
-      </section>
-
-      <section className="profile-section">
-        <h2>Core Expertise</h2>
-
-        <div className="expertise-grid">
-          <div>✔ Airline Operations</div>
-
-          <div>✔ Air Cargo Operations</div>
-
-          <div>✔ Route Management</div>
-
-          <div>✔ ULD Operations</div>
-
-          <div>✔ Commercial Sales</div>
-
-          <div>✔ Business Development</div>
-
-          <div>✔ Key Account Management</div>
-
-          <div>✔ Supply Chain Logistics</div>
-
-          <div>✔ Freight Management</div>
-
-          <div>✔ Vendor Coordination</div>
-
-          <div>✔ Team Leadership</div>
-
-          <div>✔ Training & Consulting</div>
-        </div>
       </section>
 
       <section className="profile-section">
@@ -101,116 +68,114 @@ function Mazher() {
 
         <div className="timeline">
           <div className="timeline-card">
-            <h3>Qatar Airways</h3>
-
+            <h3>Qatar Airways GSA Office, Hyderabad</h3>
             <p>
-              Established the Qatar Airways GSA office in Hyderabad,
-              strengthening operational capability and creating a strong
-              foundation for sustained business growth.
+              Established the Qatar Airways GSA office in Hyderabad, building a
+              strong foundation for growth and operations in a competitive market.
             </p>
           </div>
 
           <div className="timeline-card">
-            <h3>Saudia Cargo</h3>
-
+            <h3>Saudia Cargo, Hyderabad</h3>
             <p>
-              Successfully led the Hyderabad Cargo Station to achieve the No. 2
-              global ranking within the airline's international cargo network.
+              Led the station to achieve No. 2 global ranking within the airline&apos;s
+              network, reflecting strong operational discipline and performance.
             </p>
           </div>
 
           <div className="timeline-card">
             <h3>Ethiopian Cargo</h3>
-
             <p>
-              Played a key leadership role during the COVID-19 pandemic by
-              managing ad-hoc cargo flight operations and ensuring uninterrupted
-              cargo movement during critical business periods.
-            </p>
-          </div>
-          <div className="timeline-card">
-            <h3>Emirates SkyCargo</h3>
-
-            <p>
-              Contributed towards strengthening cargo operations, customer
-              relationships and commercial performance through efficient cargo
-              planning, documentation and service excellence.
+              Played a pivotal role during the COVID-19 pandemic in managing ad
+              hoc flight operations, ensuring uninterrupted cargo movement during
+              critical times.
             </p>
           </div>
 
           <div className="timeline-card">
-            <h3>Air India</h3>
-
+            <h3>Leadership Across Renowned Organizations</h3>
             <p>
-              Built strong expertise in airline operations, passenger service,
-              cargo handling and airport coordination while working with India's
-              national carrier.
+              Held key leadership positions with globally renowned organizations,
+              including positions across Air India, Emirates, Qatar Airways,
+              Saudia Cargo and Ethiopian Cargo.
             </p>
           </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Professional Credentials</h2>
+        <h2>Core Expertise</h2>
 
-        <div className="expertise-grid">
-          <div>British Airways Management College</div>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <h3>Airline & Air Cargo Operations</h3>
+            <ul className="info-list">
+              <li>End-to-end operations</li>
+              <li>Cargo handling</li>
+              <li>Route management</li>
+              <li>ULD operations</li>
+            </ul>
+          </div>
 
-          <div>IATA Geneva Professional Training</div>
+          <div className="profile-card">
+            <h3>Commercial & Business Development</h3>
+            <ul className="info-list">
+              <li>Sales</li>
+              <li>Marketing</li>
+              <li>Key accounts management</li>
+              <li>Market expansion</li>
+            </ul>
+          </div>
 
-          <div>IATA Singapore Diploma</div>
+          <div className="profile-card">
+            <h3>Supply Chain & Logistics</h3>
+            <ul className="info-list">
+              <li>Freight management</li>
+              <li>Vendor coordination</li>
+              <li>Process optimization</li>
+            </ul>
+          </div>
 
-          <div>Air Cargo Management</div>
-
-          <div>Commercial Airline Operations</div>
-
-          <div>Sales & Marketing</div>
-
-          <div>Leadership & Team Management</div>
-
-          <div>Customer Relationship Management</div>
-
-          <div>Business Development</div>
-
-          <div>Supply Chain & Logistics</div>
-
-          <div>Airport Operations</div>
-
-          <div>Aviation Training & Consulting</div>
+          <div className="profile-card">
+            <h3>Leadership & Training</h3>
+            <ul className="info-list">
+              <li>Building high-performance teams</li>
+              <li>Mentoring</li>
+              <li>Capability enhancement</li>
+              <li>Practical, results-driven solutions</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Professional Philosophy</h2>
+        <h2>Credentials & Training</h2>
 
-        <p>
-          Strongly believes that aviation education should combine operational
-          knowledge with practical industry exposure. His approach focuses on
-          preparing professionals who can immediately contribute to airline,
-          airport and cargo operations while maintaining global aviation
-          standards, customer satisfaction and operational excellence.
-        </p>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>British Airways&apos; College of Marketing & Commercial Training Establishment, London</li>
+              <li>Air Cargo Marketing – IATA, Geneva</li>
+              <li>Air Cargo Management & Shipping PER Cargo Management – IATA, Singapore</li>
+              <li>IATA Diploma</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section className="profile-section">
-        <h2>Industry Focus Areas</h2>
+        <h2>Industry Experience</h2>
 
-        <div className="expertise-grid">
-          <div>Airline Operations</div>
-
-          <div>Airport Management</div>
-
-          <div>Air Cargo Logistics</div>
-
-          <div>Commercial Strategy</div>
-
-          <div>Cargo Sales</div>
-
-          <div>Freight Forwarding</div>
-
-          <div>Operational Excellence</div>
-
-          <div>Corporate Training</div>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Air India</li>
+              <li>Emirates</li>
+              <li>Qatar Airways</li>
+              <li>Saudia Cargo</li>
+              <li>Ethiopian Cargo</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -219,18 +184,15 @@ function Mazher() {
 
         <div className="contact-box">
           <p>
-            <strong>Email :</strong>
-            mazher.iqbal@gmail.com
+            <strong>Email:</strong> Contact details require verification from the original profile poster before publication.
           </p>
 
           <p>
-            <strong>Phone :</strong>
-            +91 XXXXX XXXXX
+            <strong>Phone:</strong> Contact details require verification from the original profile poster before publication.
           </p>
 
           <p>
-            <strong>Location :</strong>
-            India
+            <strong>Location:</strong> India
           </p>
         </div>
       </section>

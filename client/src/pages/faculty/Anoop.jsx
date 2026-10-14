@@ -10,85 +10,92 @@ function Anoop() {
         </div>
 
         <div className="faculty-content">
-          <span className="faculty-tag">AVIATION SECURITY EXPERT</span>
+          <span className="faculty-tag">Aviation Security Expert</span>
 
           <h1>Anoop Kishore Bhatnagar</h1>
 
-          <h3>Aviation Security Specialist | Trainer | Consultant</h3>
+          <h3>
+            Aviation Security Expert | Master Trainer | Consultant | Former Air
+            India Executive
+          </h3>
 
           <p>
-            Highly accomplished Aviation Security professional with more than
-            three decades of experience in airport security, aviation safety,
-            regulatory compliance, security audits, risk assessment and AVSEC
-            training. Recognized for building robust aviation security systems
-            aligned with national and international aviation standards.
+            A distinguished Aviation Security Professional with over 32 years of
+            experience in aviation security management, training, compliance and
+            operational leadership. He is a BCAS-certified instructor and has
+            contributed to the development of competent aviation security
+            professionals across India through practical, standards-based and
+            capability-focused training programmes.
           </p>
 
           <div className="faculty-stats">
             <div className="stat-box">
-              <h2>35+</h2>
+              <h2>32+</h2>
               <p>Years Experience</p>
             </div>
 
             <div className="stat-box">
               <h2>BCAS</h2>
-              <p>Security Standards</p>
+              <p>Certified Instructor</p>
             </div>
 
             <div className="stat-box">
               <h2>AVSEC</h2>
-              <p>Expert Trainer</p>
+              <p>Security & Training Leadership</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Executive Summary</h2>
+        <h2>Professional Overview</h2>
 
         <p>
-          Anoop Kishore Bhatnagar possesses extensive expertise in aviation
-          security management, airport security operations, regulatory
-          compliance and aviation risk mitigation. Throughout his professional
-          career he has contributed significantly towards strengthening airport
-          security systems while mentoring aviation professionals across
-          multiple organizations.
+          Anoop Kishore Bhatnagar is a seasoned aviation security leader with
+          a long-standing track record in training, compliance, supervision and
+          operational readiness. His professional journey combines public sector
+          airline security discipline with contemporary training design and a
+          strong emphasis on workforce capability enhancement.
         </p>
 
         <p>
-          His practical understanding of BCAS regulations, ICAO standards, DGCA
-          requirements and airport operational security enables him to deliver
-          highly effective industry-oriented training programmes.
+          His work supports national and international aviation security
+          standards while helping organizations build stronger safety culture,
+          operational discipline and professional confidence among aviation
+          personnel.
         </p>
       </section>
 
       <section className="profile-section">
-        <h2>Core Competencies</h2>
+        <h2>Professional Snapshot</h2>
 
-        <div className="expertise-grid">
-          <div>✔ Aviation Security (AVSEC)</div>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>32+ years of experience in Aviation Security, Training & Operations</li>
+              <li>Former Head, Training Division (Northern Region), Air India Security Training Centre, New Delhi</li>
+              <li>BCAS-Certified Instructor</li>
+              <li>Pre-Positioning Officer for VVIP flights of Hon&apos;ble Prime Minister & President of India</li>
+              <li>Expert in Security Training</li>
+              <li>Passenger Profiling</li>
+              <li>Risk Mitigation</li>
+              <li>Compliance</li>
+              <li>Leadership</li>
+            </ul>
+          </div>
 
-          <div>✔ BCAS Compliance</div>
-
-          <div>✔ ICAO Security Standards</div>
-
-          <div>✔ DGCA Regulations</div>
-
-          <div>✔ Airport Security Audits</div>
-
-          <div>✔ Risk Assessment</div>
-
-          <div>✔ Crisis Management</div>
-
-          <div>✔ Emergency Response Planning</div>
-
-          <div>✔ Security Awareness Training</div>
-
-          <div>✔ Regulatory Compliance</div>
-
-          <div>✔ Airport Operations</div>
-
-          <div>✔ Leadership & Mentoring</div>
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Emotional Intelligence</li>
+              <li>Soft Skills Training</li>
+              <li>Visiting Faculty at leading Aviation Institutions</li>
+              <li>Director – Programs & Training, SAFE ROAD FOUNDATION</li>
+              <li>Operational readiness and workforce capability enhancement</li>
+              <li>Engaging training style</li>
+              <li>Practical insights</li>
+              <li>Ability to inspire excellence</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -97,117 +104,97 @@ function Anoop() {
 
         <div className="timeline">
           <div className="timeline-card">
-            <h3>Aviation Security Leadership</h3>
-
+            <h3>Strategic Training Initiatives</h3>
             <p>
-              Successfully managed aviation security operations while ensuring
-              complete compliance with BCAS regulations, ICAO standards and
-              airport security protocols.
+              Led strategic aviation security training initiatives at Air India,
+              aligning training delivery with national and international security
+              standards while keeping operations practical and performance-driven.
             </p>
           </div>
 
           <div className="timeline-card">
-            <h3>Training & Capacity Building</h3>
-
+            <h3>International Security Coordination</h3>
             <p>
-              Conducted professional aviation security training programmes,
-              workshops and awareness sessions for airport personnel and
-              aviation professionals.
+              Coordinated international security and operational arrangements for
+              VVIP flights, ensuring secure, efficient and internationally
+              aligned movement and compliance frameworks.
             </p>
           </div>
 
           <div className="timeline-card">
-            <h3>Security Audit & Compliance</h3>
-
+            <h3>Competency-Based Training</h3>
             <p>
-              Extensive experience in security audits, operational inspections,
-              compliance reviews and implementation of aviation security
-              procedures.
-            </p>
-          </div>
-          <div className="timeline-card">
-            <h3>Airport Security Operations</h3>
-
-            <p>
-              Led and supervised airport security operations with a strong focus
-              on passenger safety, access control, threat assessment, screening
-              procedures and operational preparedness.
+              Designed and delivered competency-based training programmes focused
+              on workforce capability enhancement, operational readiness and
+              security professionalism.
             </p>
           </div>
 
           <div className="timeline-card">
-            <h3>Professional Consulting</h3>
-
+            <h3>Engaging Delivery & Leadership</h3>
             <p>
-              Served as a trusted advisor in aviation security, providing
-              guidance on regulatory compliance, operational excellence,
-              security management systems and organizational preparedness.
+              Known for an engaging training style, practical insights and the
+              ability to inspire excellence in aviation professionals while
+              reinforcing operational discipline and confidence.
             </p>
           </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Professional Credentials</h2>
+        <h2>Core Expertise</h2>
 
-        <div className="expertise-grid">
-          <div>BCAS Aviation Security Regulations</div>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Aviation Security Management</li>
+              <li>Regulatory Compliance & Audits</li>
+              <li>Passenger Profiling & Behavioral Analysis</li>
+              <li>Risk Assessment & Threat Mitigation</li>
+              <li>Training Design & Delivery</li>
+              <li>Leadership & Team Development</li>
+            </ul>
+          </div>
 
-          <div>ICAO Aviation Security Standards</div>
-
-          <div>DGCA Regulatory Compliance</div>
-
-          <div>Airport Security Management</div>
-
-          <div>Security Audit & Inspection</div>
-
-          <div>Crisis & Emergency Management</div>
-
-          <div>AVSEC Instructor</div>
-
-          <div>Security Awareness Training</div>
-
-          <div>Operational Risk Assessment</div>
-
-          <div>Leadership Development</div>
-
-          <div>Training & Consulting</div>
-
-          <div>Airport Operations</div>
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>VVIP & Special Flight Security</li>
+              <li>Fraud Prevention & Security Awareness</li>
+              <li>Emotional Intelligence & Soft Skills</li>
+              <li>Customer Service Excellence</li>
+              <li>Crisis Management & Business Continuity</li>
+              <li>Safety Culture & Professional Growth</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Professional Mission</h2>
+        <h2>Academic & Professional Credentials</h2>
 
-        <p>
-          Dedicated to strengthening aviation security by developing highly
-          skilled professionals capable of implementing global security
-          standards while ensuring safe, secure and efficient airport
-          operations. Passionate about creating awareness, improving compliance
-          and building a strong aviation security culture across the industry.
-        </p>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Graduate, University of Delhi</li>
+              <li>NCC "C" Certificate</li>
+              <li>BCAS-Certified Instructor</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section className="profile-section">
-        <h2>Areas of Specialization</h2>
+        <h2>Associations</h2>
 
-        <div className="expertise-grid">
-          <div>Aviation Security</div>
-
-          <div>Airport Operations</div>
-
-          <div>BCAS Compliance</div>
-
-          <div>ICAO Standards</div>
-
-          <div>Security Risk Management</div>
-
-          <div>Emergency Response Planning</div>
-
-          <div>AVSEC Training</div>
-
-          <div>Corporate Consulting</div>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Visiting Faculty – GMR Aero Academy</li>
+              <li>Visiting Faculty – Rajiv Gandhi National Aviation University</li>
+              <li>Visiting Faculty – Adani University for Aviation</li>
+              <li>Director – Programs & Training, SAFE ROAD FOUNDATION</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -216,18 +203,17 @@ function Anoop() {
 
         <div className="contact-box">
           <p>
-            <strong>Email :</strong>
-            anoop@example.com
+            <strong>Email:</strong>{" "}
+            <a href="mailto:anoopbhatnagar56@gmail.com">anoopbhatnagar56@gmail.com</a>
           </p>
 
           <p>
-            <strong>Phone :</strong>
-            +91 XXXXX XXXXX
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+919810358404">+91 98103 58404</a>
           </p>
 
           <p>
-            <strong>Location :</strong>
-            India
+            <strong>Location:</strong> New Delhi, India
           </p>
         </div>
       </section>

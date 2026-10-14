@@ -10,20 +10,19 @@ function Vijendra() {
         </div>
 
         <div className="faculty-content">
-          <span className="faculty-tag">AIRPORT OPERATIONS EXPERT</span>
+          <span className="faculty-tag">Airport Operations Trainer</span>
 
           <h1>Vijendra Singh Verma</h1>
 
-          <h3>
-            Airport Operations Professional | Aviation Trainer | Consultant
-          </h3>
+          <h3>EX-JetaAirways | AI Airport Services | Trainer & Mentor</h3>
 
           <p>
-            Highly accomplished Airport Operations professional with extensive
-            experience in airport management, airline operations, passenger
-            services, safety, operational excellence and aviation training.
-            Known for developing future aviation professionals through
-            practical, industry-oriented learning methodologies.
+            A seasoned aviation professional with nearly 3 decades of experience
+            from leading organizations including Jet Airways and AI Airport
+            Services. His expertise spans Airport Operations, Customer Service &
+            Experience Management, Ground Handling & Airside Operations,
+            Training, Mentoring & Skill Development and Team Leadership &
+            Performance Excellence.
           </p>
 
           <div className="faculty-stats">
@@ -34,181 +33,120 @@ function Vijendra() {
 
             <div className="stat-box">
               <h2>Airport</h2>
-              <p>Operations Expert</p>
+              <p>Operations Excellence</p>
             </div>
 
             <div className="stat-box">
-              <h2>Trainer</h2>
-              <p>Industry Mentor</p>
+              <h2>Mentor</h2>
+              <p>Trainer & Facilitator</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Executive Summary</h2>
+        <h2>Professional Overview</h2>
 
         <p>
-          Vijendra Singh Verma possesses rich experience in airport operations,
-          airline coordination, passenger services, operational planning and
-          aviation training. Throughout his professional journey he has
-          successfully contributed to enhancing operational efficiency, safety
-          standards and customer experience.
+          Vijendra Singh Verma is a well-established aviation professional whose
+          career has centered on service excellence, operational efficiency and a
+          customer-first culture in complex airport environments. He combines
+          extensive hands-on knowledge with people-centric leadership, enabling
+          teams to perform with empathy, trust and accountability.
         </p>
 
         <p>
-          His practical knowledge combined with years of operational leadership
-          enables students and professionals to understand real-world airport
-          functioning beyond classroom learning.
+          His work is grounded in the belief that strong aviation professionals
+          are built through mentoring, confidence-building and practical skill
+          development across airport and airline operations.
+        </p>
+      </section>
+
+      <section className="profile-section">
+        <h2>Key Profile Highlights</h2>
+
+        <div className="profile-grid">
+          <div className="profile-card">
+            <h3>30+ Years</h3>
+            <ul className="info-list">
+              <li>Rich experience in Airport Operations</li>
+              <li>Customer Service</li>
+              <li>Airside Operations</li>
+            </ul>
+          </div>
+
+          <div className="profile-card">
+            <h3>People-Centric Leadership</h3>
+            <ul className="info-list">
+              <li>Building teams</li>
+              <li>Mentoring teams</li>
+              <li>Leading high-performing teams</li>
+              <li>Empathy and trust</li>
+            </ul>
+          </div>
+
+          <div className="profile-card">
+            <h3>Operational Excellence</h3>
+            <ul className="info-list">
+              <li>Ground Handling</li>
+              <li>Safety</li>
+              <li>Service Quality</li>
+              <li>Process Efficiency</li>
+            </ul>
+          </div>
+
+          <div className="profile-card">
+            <h3>Trainer & Mentor</h3>
+            <ul className="info-list">
+              <li>Developing skills</li>
+              <li>Developing confidence</li>
+              <li>Developing careers in aviation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="profile-section">
+        <h2>Mentoring the Future</h2>
+
+        <p>
+          Vijendra is committed to nurturing ethical, skilled and future-ready
+          aviation professionals. He works with emerging talent across career
+          pathways such as Inflight Services, Ground Operations and Airport
+          Management, collaborating with institutions, training organizations and
+          industry partners to build strong foundations for the next generation
+          of aviation professionals.
         </p>
       </section>
 
       <section className="profile-section">
         <h2>Core Competencies</h2>
 
-        <div className="expertise-grid">
-          <div>✔ Airport Operations</div>
-
-          <div>✔ Passenger Services</div>
-
-          <div>✔ Ground Handling</div>
-
-          <div>✔ Airline Coordination</div>
-
-          <div>✔ Safety & Compliance</div>
-
-          <div>✔ Airport Regulations</div>
-
-          <div>✔ Customer Experience</div>
-
-          <div>✔ Team Leadership</div>
-
-          <div>✔ Operational Planning</div>
-
-          <div>✔ Aviation Training</div>
-
-          <div>✔ Quality Management</div>
-
-          <div>✔ Professional Mentoring</div>
-        </div>
-      </section>
-
-      <section className="profile-section">
-        <h2>Professional Highlights</h2>
-
-        <div className="timeline">
-          <div className="timeline-card">
-            <h3>Airport Operations Leadership</h3>
-
-            <p>
-              Successfully managed airport operational activities, ensuring
-              smooth coordination among stakeholders while maintaining safety,
-              efficiency and service quality.
-            </p>
-          </div>
-
-          <div className="timeline-card">
-            <h3>Passenger Service Excellence</h3>
-
-            <p>
-              Led passenger service initiatives focused on operational
-              efficiency, customer satisfaction and service quality improvement.
-            </p>
-          </div>
-
-          <div className="timeline-card">
-            <h3>Operational Planning</h3>
-
-            <p>
-              Extensive experience in airport resource planning, operational
-              coordination, process improvement and performance monitoring.
-            </p>
-          </div>
-          <div className="timeline-card">
-            <h3>Training & Mentoring</h3>
-
-            <p>
-              Conducted professional training programmes for students and
-              aviation professionals with emphasis on airport operations,
-              passenger handling, teamwork, communication and operational
-              excellence.
-            </p>
-          </div>
-
-          <div className="timeline-card">
-            <h3>Leadership & Team Management</h3>
-
-            <p>
-              Successfully led multidisciplinary operational teams, coordinated
-              with various airport stakeholders and ensured compliance with
-              organizational procedures while maintaining high service
-              standards.
-            </p>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Airport Operations</li>
+              <li>Customer Service & Experience Management</li>
+              <li>Ground Handling & Airside Operations</li>
+              <li>Training, Mentoring & Skill Development</li>
+              <li>Team Leadership & Performance Excellence</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section className="profile-section">
-        <h2>Professional Credentials</h2>
+        <h2>Professional Focus Areas</h2>
 
-        <div className="expertise-grid">
-          <div>Airport Operations Management</div>
-
-          <div>Passenger Service Excellence</div>
-
-          <div>Ground Handling Operations</div>
-
-          <div>Safety & Regulatory Compliance</div>
-
-          <div>Operational Planning</div>
-
-          <div>Customer Service Management</div>
-
-          <div>Leadership Development</div>
-
-          <div>Professional Training</div>
-
-          <div>Quality Management Systems</div>
-
-          <div>Team Building & Mentoring</div>
-
-          <div>Aviation Consulting</div>
-
-          <div>Operational Excellence</div>
-        </div>
-      </section>
-
-      <section className="profile-section">
-        <h2>Professional Mission</h2>
-
-        <p>
-          Dedicated to developing competent aviation professionals through
-          practical learning, operational excellence and continuous skill
-          development. Strongly believes that knowledge combined with
-          discipline, teamwork and professionalism creates successful aviation
-          leaders of tomorrow.
-        </p>
-      </section>
-
-      <section className="profile-section">
-        <h2>Areas of Specialization</h2>
-
-        <div className="expertise-grid">
-          <div>Airport Management</div>
-
-          <div>Airport Operations</div>
-
-          <div>Passenger Handling</div>
-
-          <div>Ground Operations</div>
-
-          <div>Operational Leadership</div>
-
-          <div>Safety Management</div>
-
-          <div>Customer Experience</div>
-
-          <div>Professional Training</div>
+        <div className="profile-grid">
+          <div className="profile-card">
+            <ul className="info-list">
+              <li>Service excellence</li>
+              <li>Operational efficiency</li>
+              <li>Customer-first culture</li>
+              <li>Complex airport environments</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -217,18 +155,15 @@ function Vijendra() {
 
         <div className="contact-box">
           <p>
-            <strong>Email :</strong>
-            vijendra@example.com
+            <strong>Email:</strong> Contact details require verification from the original profile poster before publication.
           </p>
 
           <p>
-            <strong>Phone :</strong>
-            +91 XXXXX XXXXX
+            <strong>Phone:</strong> Contact details require verification from the original profile poster before publication.
           </p>
 
           <p>
-            <strong>Location :</strong>
-            India
+            <strong>Location:</strong> India
           </p>
         </div>
       </section>

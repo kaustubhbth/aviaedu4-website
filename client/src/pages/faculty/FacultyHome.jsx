@@ -28,7 +28,7 @@ function FacultyHome() {
 
           <h3>Yogesh Bhandari</h3>
 
-          <p>Air Cargo Training Leader</p>
+          <p>Air Cargo Training Leader & Aviation Operations Strategist</p>
 
           <Link to="/faculty/yogesh">
             <button>View Profile</button>
@@ -40,7 +40,7 @@ function FacultyHome() {
 
           <h3>Anoop Kishore Bhatnagar</h3>
 
-          <p>Aviation Security Expert</p>
+          <p>Aviation Security Expert | Master Trainer | Consultant</p>
 
           <Link to="/faculty/anoop">
             <button>View Profile</button>
@@ -52,7 +52,7 @@ function FacultyHome() {
 
           <h3>Mazher Iqbal</h3>
 
-          <p>Air Cargo & Logistics Veteran</p>
+          <p>Aviation, Air Cargo & Logistics Veteran | Trainer | Consultant</p>
 
           <Link to="/faculty/mazher">
             <button>View Profile</button>
@@ -64,7 +64,7 @@ function FacultyHome() {
 
           <h3>Vijendra Singh Verma</h3>
 
-          <p>Airport Operations Trainer</p>
+          <p>Ex-Jet Airways | AI Airport Services | Trainer & Mentor</p>
 
           <Link to="/faculty/vijendra">
             <button>View Profile</button>

@@ -4,11 +4,19 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import aviaLogo from "../assets/images/logo/aviaedu4-logo.jpeg";
 
-function Navbar() {
+function Navbar({ onApplyClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const handleApplyClick = (event) => {
+    event.preventDefault();
+    closeMenu();
+    if (onApplyClick) {
+      onApplyClick();
+    }
   };
 
   return (
@@ -62,14 +70,14 @@ function Navbar() {
           </li>
 
           <li className="mobile-apply">
-            <Link className="apply-btn" to="/contact" onClick={closeMenu}>
+            <Link className="apply-btn" to="/contact" onClick={handleApplyClick}>
               Apply Now
             </Link>
           </li>
         </ul>
       </nav>
 
-      <Link className="apply-btn desktop-btn" to="/contact">
+      <Link className="apply-btn desktop-btn" to="/contact" onClick={handleApplyClick}>
         Apply Now
       </Link>
 

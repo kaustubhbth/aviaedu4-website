@@ -48,8 +48,9 @@
 
 .faculty-card img {
     width: 100%;
-    height: 320px;
+    height: clamp(240px, 28vw, 320px);
     object-fit: cover;
+    object-position: center top;
 }
 
 .faculty-card h3 {
@@ -74,4 +75,33 @@
     cursor: pointer;
     font-weight: 700;
     box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .faculty-home {
+        padding-top: 6rem;
+    }
+
+    .faculty-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .faculty-card img {
+        height: clamp(220px, 52vw, 280px);
+    }
+}
+
+@media (max-width: 480px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .faculty-card p {
+        font-size: 0.95rem;
+    }
 }

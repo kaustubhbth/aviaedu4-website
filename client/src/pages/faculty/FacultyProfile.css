@@ -25,15 +25,14 @@
 
 .faculty-tag {
     display: inline-block;
-    background: #f7f3e9;
-    color: var(--navy-900);
+    background: var(--navy-900);
     color: var(--white);
     padding: 0.6rem 1rem;
     border-radius: 3px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 700;
     margin-bottom: 1.1rem;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
@@ -107,26 +106,51 @@
     font-size: 1.02rem;
 }
 
-.expertise-grid {
+.profile-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.expertise-grid div {
+.profile-card {
     background: var(--white);
-    padding: 1.2rem 1rem;
+    padding: 1.3rem 1.1rem;
     border-radius: 4px;
-    box-shadow: none;
-    font-weight: 600;
-    color: var(--navy-900);
     border: 1px solid var(--line);
-    transition: transform 0.25s ease;
+    box-shadow: none;
 }
 
-.expertise-grid div:hover {
-    border-color: var(--gold-500);
+.profile-card h3 {
+    color: var(--navy-900);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.info-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--ink-500);
+    line-height: 1.7;
+}
+
+.info-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--gold-500);
+    font-size: 1.4rem;
+    line-height: 1;
 }
 
 .timeline {
@@ -146,7 +170,11 @@
 
 .timeline-card h3 {
     color: var(--navy-900);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.timeline-card p {
+    margin-bottom: 0.65rem;
 }
 
 .contact-box {
@@ -158,7 +186,17 @@
 }
 
 .contact-box p {
-    margin: 0.7rem 0;
+    margin: 0.8rem 0;
+}
+
+.contact-box a {
+    color: var(--navy-900);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.compact-grid {
+    margin-top: 1.5rem;
 }
 
 @media (max-width: 900px) {
@@ -169,5 +207,9 @@
 
     .faculty-image img {
         width: min(100%, 300px);
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
     }
 }

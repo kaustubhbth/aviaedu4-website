@@ -8,11 +8,12 @@
 
 .home-page .hero-slide {
    position: relative;
-   height: min(76svh, 700px);
    min-height: 500px;
+   height: clamp(420px, 62vh, 700px);
    background-color: var(--navy-900);
    background-size: cover;
-   background-position: center;
+   background-position: center center;
+   background-repeat: no-repeat;
    display: flex;
    align-items: center;
    padding: 2.5rem clamp(1.2rem, 5vw, 7rem);
@@ -97,8 +98,10 @@
    }
 
    .home-page .hero-slide {
-      min-height: 450px;
+      min-height: 360px;
+      height: clamp(360px, 60vw, 500px);
       padding: 2rem 1.2rem 3rem;
+      background-position: center center;
    }
 
    .home-page .hero-content h1 {
@@ -123,6 +126,12 @@
 
 @media (max-width: 480px) {
    .home-page .hero-slide {
-      min-height: 420px;
+      min-height: 320px;
+      height: clamp(320px, 68vw, 420px);
+      padding: 1.4rem 1rem 2.5rem;
+   }
+
+   .home-page .hero-content {
+      max-width: 100%;
    }
 }

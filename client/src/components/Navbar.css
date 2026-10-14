@@ -34,6 +34,15 @@ body {
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 h1,
@@ -249,14 +258,21 @@ a {
 @media (max-width: 480px) {
     .navbar {
         height: 72px;
+        padding-inline: 0.9rem;
     }
 
-    .logo {
-        font-size: 1.5rem;
+    .logo-image {
+        height: 32px;
+        max-width: 170px;
     }
 
     .nav-links {
         top: 72px;
         width: 100%;
+    }
+
+    .nav-links li a {
+        font-size: 0.92rem;
+        padding: 0.85rem 0.5rem;
     }
 }
