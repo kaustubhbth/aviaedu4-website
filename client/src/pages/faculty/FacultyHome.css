@@ -49,8 +49,9 @@
 .faculty-card img {
     width: 100%;
     height: clamp(240px, 28vw, 320px);
-    object-fit: cover;
-    object-position: center top;
+    object-fit: contain;
+    object-position: center;
+    background: var(--surface-strong);
 }
 
 .faculty-card h3 {

@@ -1,11 +1,5 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
-const socialLinks = [
-  { label: "LinkedIn", href: "", Icon: FaLinkedinIn },
-  { label: "Instagram", href: "", Icon: FaInstagram },
-];
 
 function Footer() {
   return (
@@ -20,32 +14,6 @@ function Footer() {
             professionals.
           </p>
 
-          <div className="footer-socials" aria-label="Social media">
-            {socialLinks.map(({ label, href, Icon }) => {
-              const icon = <Icon aria-hidden="true" />;
-
-              return href ? (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {icon}
-                </a>
-              ) : (
-                <span
-                  key={label}
-                  className="footer-social-placeholder"
-                  aria-label={`${label} profile link will be added later`}
-                  title={`${label} profile link will be added later`}
-                >
-                  {icon}
-                </span>
-              );
-            })}
-          </div>
         </div>
 
         <div className="footer-links">
@@ -64,6 +32,8 @@ function Footer() {
           <Link to="/gallery">Gallery</Link>
 
           <Link to="/contact">Contact</Link>
+
+          <Link to="/privacy-policy">Privacy Notice</Link>
         </div>
 
         <div className="footer-training">
@@ -85,9 +55,9 @@ function Footer() {
 
           <p>📍 D-52, Gulmohar Park, Ground Floor, New Delhi-110049</p>
 
-          <p>📞 +91 XXXXX XXXXX</p>
-
-          <p>📧 info@aviaedu4.com</p>
+          <p>
+            <a href="mailto:info@aviaedu4.com">info@aviaedu4.com</a>
+          </p>
         </div>
       </div>
 

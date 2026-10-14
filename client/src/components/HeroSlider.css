@@ -10,13 +10,30 @@
    position: relative;
    min-height: 500px;
    height: clamp(420px, 62vh, 700px);
+   overflow: hidden;
    background-color: var(--navy-900);
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
    display: flex;
    align-items: center;
    padding: 2.5rem clamp(1.2rem, 5vw, 7rem);
+}
+
+.home-page .hero-slide-image {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.home-page .hero-slide.image-only {
+   justify-content: center;
+   padding-inline: 0;
+   background-color: #f5f6f7;
+}
+
+.home-page .hero-slide.image-only .hero-slide-image {
+   object-fit: contain;
 }
 
 .home-page .hero-slide::after {
@@ -27,18 +44,19 @@
 }
 
 .home-page .hero-slide.image-only::after {
-   background: rgba(7, 20, 37, 0.12);
+   background: transparent;
 }
 
 .home-page .hero-content {
    position: relative;
-   z-index: 1;
+   z-index: 2;
    max-width: 660px;
    color: #fff;
    text-shadow: none;
 }
 
-.home-page .hero-content h1 {
+.home-page .hero-content h1,
+.home-page .hero-content h2 {
    font-size: clamp(2.7rem, 4.8vw, 4.1rem);
    margin-bottom: 1rem;
    line-height: 1.02;
@@ -101,7 +119,6 @@
       min-height: 360px;
       height: clamp(360px, 60vw, 500px);
       padding: 2rem 1.2rem 3rem;
-      background-position: center center;
    }
 
    .home-page .hero-content h1 {

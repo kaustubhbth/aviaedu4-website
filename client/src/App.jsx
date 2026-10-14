@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import FloatingButtons from "./components/FloatingButtons";
 import CourseInterestModal from "./components/CourseInterestModal";
+import SeoHead from "./components/SeoHead";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,36 +13,13 @@ import Consulting from "./pages/Consulting";
 import Faculty from "./pages/Faculty";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-
-const AUTO_POPUP_KEY = "aviaedu4-course-interest-autopopup-seen";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const [isCourseInterestOpen, setIsCourseInterestOpen] = useState(false);
-  const autoPopupTimerRef = useRef(null);
-
-  useEffect(() => {
-    const alreadySeen = sessionStorage.getItem(AUTO_POPUP_KEY) === "true";
-
-    if (alreadySeen) {
-      return undefined;
-    }
-
-    autoPopupTimerRef.current = window.setTimeout(() => {
-      autoPopupTimerRef.current = null;
-      setIsCourseInterestOpen(true);
-      sessionStorage.setItem(AUTO_POPUP_KEY, "true");
-    }, 1200);
-
-    return () => {
-      window.clearTimeout(autoPopupTimerRef.current);
-      autoPopupTimerRef.current = null;
-    };
-  }, []);
 
   const openCourseInterest = () => {
-    window.clearTimeout(autoPopupTimerRef.current);
-    autoPopupTimerRef.current = null;
-    sessionStorage.setItem(AUTO_POPUP_KEY, "true");
     setIsCourseInterestOpen(true);
   };
 
@@ -60,6 +37,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <SeoHead />
       <Navbar onApplyClick={openCourseInterest} />
 
       <Routes>
@@ -70,11 +48,11 @@ function App() {
         <Route path="/faculty/*" element={<Faculty />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
-
-      <FloatingButtons />
 
       <CourseInterestModal
         isOpen={isCourseInterestOpen}

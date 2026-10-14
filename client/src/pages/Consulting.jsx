@@ -1,4 +1,5 @@
 import "./Consulting.css";
+import { Link } from "react-router-dom";
 
 function Consulting() {
   return (
@@ -134,7 +135,9 @@ function Consulting() {
       <section className="consult-cta">
         <h2>Looking for Aviation Consulting?</h2>
 
-        <button>Request Consultation</button>
+        <Link className="consult-cta-button" to="/contact">
+          Request Consultation
+        </Link>
       </section>
     </>
   );

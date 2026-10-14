@@ -25,7 +25,11 @@ function Navbar({ onApplyClick }) {
         <img className="logo-image" src={aviaLogo} alt="AVIAEDU4 Trainers & Consultants logo" />
       </div>
 
-      <nav className={menuOpen ? "nav-active" : ""}>
+      <nav
+        id="primary-navigation"
+        aria-label="Primary navigation"
+        className={menuOpen ? "nav-active" : ""}
+      >
         <ul className="nav-links">
           <li>
             <Link to="/" onClick={closeMenu}>
@@ -81,9 +85,16 @@ function Navbar({ onApplyClick }) {
         Apply Now
       </Link>
 
-      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+      <button
+        type="button"
+        className="menu-icon"
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={menuOpen}
+        aria-controls="primary-navigation"
+        onClick={() => setMenuOpen((isOpen) => !isOpen)}
+      >
         {menuOpen ? <FaTimes /> : <FaBars />}
-      </div>
+      </button>
     </header>
   );
 }

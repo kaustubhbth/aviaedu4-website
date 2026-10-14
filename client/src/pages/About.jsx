@@ -1,4 +1,5 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 function About() {
   return (
     <>
@@ -57,7 +58,9 @@ function About() {
         <div className="container">
           <h2>Ready to Build Your Aviation Career?</h2>
 
-          <button>Explore Programs</button>
+          <Link className="about-programs-link" to="/training">
+            Explore Programs
+          </Link>
         </div>
       </section>
     </>

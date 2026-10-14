@@ -1,4 +1,9 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import {
+  createFormProtection,
+  normalizeAndValidate,
+} from "../utils/formProtection";
+import HoneypotField from "../components/HoneypotField";
 import "./Contact.css";
 
 const GOOGLE_FORM_RESPONSE_URL =
@@ -11,6 +16,15 @@ const GOOGLE_FORM_ENTRY_IDS = {
   subject: "entry.1137243014",
   message: "entry.795407273",
 };
+
+const CONTACT_FORM_RULES = {
+  fullName: { type: "name", required: true, maxLength: 100 },
+  email: { type: "email", required: true, maxLength: 254 },
+  phone: { type: "phone", required: true, maxLength: 20 },
+  subject: { type: "text", required: true, maxLength: 150 },
+  message: { type: "message", required: true, maxLength: 2000, maxUrls: 2 },
+};
+const contactFormProtection = createFormProtection("contact");
 
 const EMPTY_FORM = {
   fullName: "",
@@ -25,6 +39,11 @@ function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [feedback, setFeedback] = useState({ type: "", message: "" });
   const submissionInProgress = useRef(false);
+  const formOpenedAt = useRef(0);
+
+  useEffect(() => {
+    formOpenedAt.current = Date.now();
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -34,6 +53,20 @@ function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (submissionInProgress.current) return;
+
+    if (event.currentTarget.elements.companyWebsite.value.trim()) {
+      setFeedback({ type: "", message: "" });
+      return;
+    }
+
+    const validation = normalizeAndValidate(formData, CONTACT_FORM_RULES);
+    if (!validation.valid) {
+      setFeedback({
+        type: "error",
+        message: "Please verify your details and try again.",
+      });
+      return;
+    }
 
     const hasValidConfiguration =
       !GOOGLE_FORM_RESPONSE_URL.includes("FORM_ID") &&
@@ -53,16 +86,29 @@ function Contact() {
     submissionInProgress.current = true;
     setIsSubmitting(true);
     setFeedback({ type: "", message: "" });
-
-    const formBody = new URLSearchParams({
-      [GOOGLE_FORM_ENTRY_IDS.fullName]: formData.fullName,
-      [GOOGLE_FORM_ENTRY_IDS.email]: formData.email,
-      [GOOGLE_FORM_ENTRY_IDS.phone]: formData.phone,
-      [GOOGLE_FORM_ENTRY_IDS.subject]: formData.subject,
-      [GOOGLE_FORM_ENTRY_IDS.message]: formData.message,
-    });
+    let reservation;
 
     try {
+      reservation = await contactFormProtection.reserve(
+        validation.values,
+        formOpenedAt.current,
+      );
+      if (!reservation) {
+        setFeedback({
+          type: "error",
+          message: "Please verify your details and try again.",
+        });
+        return;
+      }
+
+      const formBody = new URLSearchParams({
+        [GOOGLE_FORM_ENTRY_IDS.fullName]: validation.values.fullName,
+        [GOOGLE_FORM_ENTRY_IDS.email]: validation.values.email,
+        [GOOGLE_FORM_ENTRY_IDS.phone]: validation.values.phone,
+        [GOOGLE_FORM_ENTRY_IDS.subject]: validation.values.subject,
+        [GOOGLE_FORM_ENTRY_IDS.message]: validation.values.message,
+      });
+
       await fetch(GOOGLE_FORM_RESPONSE_URL, {
         method: "POST",
         mode: "no-cors",
@@ -79,10 +125,10 @@ function Contact() {
           "Thank you! Your message has been submitted successfully. We will get back to you shortly.",
       });
     } catch {
+      reservation?.release();
       setFeedback({
         type: "error",
-        message:
-          "We could not submit your message. Please check your connection and try again.",
+        message: "Please verify your details and try again.",
       });
     } finally {
       submissionInProgress.current = false;
@@ -116,15 +162,11 @@ function Contact() {
           </div>
 
           <div className="info-box">
-            <h3>Phone</h3>
-
-            <p>+91 XXXXX XXXXX</p>
-          </div>
-
-          <div className="info-box">
             <h3>Email</h3>
 
-            <p>info@aviaedu4.com</p>
+            <p>
+              <a href="mailto:info@aviaedu4.com">info@aviaedu4.com</a>
+            </p>
           </div>
 
           <div className="info-box">
@@ -141,50 +183,76 @@ function Contact() {
         <div className="contact-form">
           <h2>Send us a Message</h2>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} noValidate>
+            <HoneypotField id="contact-company-website" />
+            <label className="visually-hidden" htmlFor="contact-full-name">
+              Full Name
+            </label>
             <input
               type="text"
+              id="contact-full-name"
               name="fullName"
               placeholder="Full Name"
               value={formData.fullName}
               onChange={handleChange}
               required
+              maxLength={100}
             />
 
+            <label className="visually-hidden" htmlFor="contact-email">
+              Email Address
+            </label>
             <input
               type="email"
+              id="contact-email"
               name="email"
               placeholder="Email Address"
               value={formData.email}
               onChange={handleChange}
               required
+              maxLength={254}
             />
 
+            <label className="visually-hidden" htmlFor="contact-phone">
+              Phone Number
+            </label>
             <input
               type="tel"
+              id="contact-phone"
               name="phone"
               placeholder="Phone Number"
               value={formData.phone}
               onChange={handleChange}
               required
+              maxLength={20}
             />
 
+            <label className="visually-hidden" htmlFor="contact-subject">
+              Subject
+            </label>
             <input
               type="text"
+              id="contact-subject"
               name="subject"
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
               required
+              maxLength={150}
             />
 
+            <label className="visually-hidden" htmlFor="contact-message">
+              Your Message
+            </label>
             <textarea
+              id="contact-message"
               rows="6"
               name="message"
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
               required
+              maxLength={2000}
             ></textarea>
 
             {feedback.message && (

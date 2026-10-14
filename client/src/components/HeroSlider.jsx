@@ -14,6 +14,8 @@ const featuredSlides = [
     image:
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80",
 
+    alt: "Airliner flying above the clouds",
+
     title: "Professional Aviation Training",
 
     subtitle:
@@ -28,6 +30,8 @@ const featuredSlides = [
     image:
       "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1920&q=80",
 
+    alt: "Air cargo and logistics operations",
+
     title: "Air Cargo & Logistics",
 
     subtitle:
@@ -40,7 +44,9 @@ const featuredSlides = [
 
   {
     image:
-      "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80",
+
+    alt: "Airliner flying above the clouds",
 
     title: "Corporate Training & Consulting",
 
@@ -62,11 +68,13 @@ const folderSlides = Object.entries(
   .sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath))
   .map(([path, image]) => ({
     image,
-    alt: `Slideshow image: ${path
-      .split("/")
-      .pop()
-      .replace(/\.[^.]+$/, "")
-      .replace(/[-_]+/g, " ")}`,
+    alt: {
+      "slide1.jpeg": "AVIAEDU4 aviation professionals and frontline workforce banner",
+      "slide2.jpeg": "AVIAEDU4 aviation training programs and faculty overview",
+      "slide3.jpeg": "Airport Handling Professional certification program poster",
+      "slide4.jpeg": "Aviation operational excellence and soft services poster",
+      "slide5.jpeg": "AVIAEDU4 aviation academy vision and mission poster",
+    }[path.split("/").pop()] ?? "AVIAEDU4 aviation training poster",
   }));
 
 const slides = [...featuredSlides, ...folderSlides];
@@ -87,17 +95,11 @@ function HeroSlider() {
         <SwiperSlide key={index}>
           <div
             className={`hero-slide${slide.title ? "" : " image-only"}`}
-            style={{
-              backgroundImage: slide.title
-                ? `linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)), url(${slide.image})`
-                : `url(${slide.image})`,
-            }}
-            role={slide.alt ? "img" : undefined}
-            aria-label={slide.alt}
           >
+            <img className="hero-slide-image" src={slide.image} alt={slide.alt} />
             {slide.title && (
               <div className="hero-content">
-                <h1>{slide.title}</h1>
+                {index === 0 ? <h1>{slide.title}</h1> : <h2>{slide.title}</h2>}
 
                 <p>{slide.subtitle}</p>
 
